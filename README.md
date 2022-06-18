@@ -15,6 +15,8 @@ Data dari BPS tentang Kemiskinan
 5. Membuat Line Chart
 6. Membuat Matriks Korelasi
 7. Membuat Paralel Koordinat
+8. Membuat Dashboard
+9. Mengevaluasi
 
 ## 1. Mencari Data
 Ke web BPS lalu cari data:
@@ -54,8 +56,14 @@ Karena 1 data memiliki beberapa tabel, harus dibuat relasi agar terhubung
 
 ![image](https://user-images.githubusercontent.com/78963679/174430582-1803c7fb-91ce-4252-88df-7226739643af.png)
 
+Ada juga tabel yang tidak bisa di *join* sehingga dibuat *datasource* baru
+
+![image](https://user-images.githubusercontent.com/78963679/174431827-c91601e5-e884-4f28-9665-d93dab22ec47.png)
+
+
 ## 4. Diagram Peta
 Disini saya ingin melihat perkembangan garis kemiskinan setiap provinsi dari tahun 2016-2021
+
 Cara:
 1. Masukkan kolom nama provinsi ke detail
 2. Langitude dan Longitude akan autogenerate
@@ -69,5 +77,69 @@ Cara:
 
 ## 5 Line Chart
 Disini ingin ditampilkan data Persentase Penduduk Yang Hidup di Bawah Garis Kemiskinan Nasional Berdasarkan Kelompok Umur dari tahun ke tahun
+
 Cara:
-1. Masukkan Kedua kelompok
+1. Buat Parameter untuk memilih tahun dan *Calculated Field* untuk memilih kelompok umur
+2. Masukkan Kedua *Calculated Field* ke *row*
+3. Tahun di *column*
+4. Klik kanan di variabel baris, tekan *dual axis*
+5. Klik kanan *header* di kanan/kiri grafik, tekan *sincronyze axis*
+6. Klik kanan *header* lagi, tekan hide
+7. Masukkan *measure names* ke *color*
+8. Klick kanan Parameter lalu tekan *show filter*
+
+![image](https://user-images.githubusercontent.com/78963679/174431325-fb627a85-7de0-4b24-a3df-ee51a8db80eb.png)
+
+## 6 Matriks Korelasi
+Membuat matrix korelasi antara P0, P1 dan P2, apakah mereka mempunyai korelasi yang positif
+
+Cara:
+1. Buat Parameter untuk memilih tahun dan 3 *Calculated Field* untuk memilih tahun
+2. Masukkan Ketiga *Calculated Field* ke *row* dan *column*
+3. Klick kanan Parameter lalu tekan *show filter*
+
+![image](https://user-images.githubusercontent.com/78963679/174431503-cb4e987d-5d74-44b3-99ac-64fa2326d171.png)
+
+## 7. Paralel Koordinat
+Ingin dilihat visualisai data multivariat dan provinsi sebagai objeknya, sebelum itu harus dipilih variabelnya
+
+Variabel terpilih:
+- Garis Kemiskinan
+- Ratio Gini
+- P0
+- P1
+- P2
+
+Cara:
+1. Buat Parameter untuk memilih tahun dan 5 *Calculated Field* untuk tahun
+2. Masukka kelima *Calculated Field* ke *measure value*
+3. Buat 5 *Calculated Field* dengan rumus
+![image](https://user-images.githubusercontent.com/78963679/174432217-a863fc98-bf8b-429f-bd1f-48860462ea62.png)
+4. Lalu masukkan ke dalam hitungan *Calculated Field* di no 2
+5. Pilih semua variabel, klik kanan -> *compute using* -> provinsi
+6. Ubah jadi *line*
+7. P0 sebagai pemisah warna supaya bisa liat, dimana letak variabel lain ketika P0 memiliki nilai sekian
+![image](https://user-images.githubusercontent.com/78963679/174432339-cc3c7954-a981-4b3c-adc4-705dfeead008.png)
+
+## 8. Dashboard Informasi
+Desainnya adalah Diagram peta paling atas karena menonjol, selanjutnya Paralel Koordinat karena mencakup 5 variabel, yang dibawahnya adalah matrix korelasi karena mencakup 3 variabel. Ketiga diagram tadi memiliki parameter Tahun yang sehingga disatukan, jadi yang terakhir adalah diagram garis.
+
+![image](https://user-images.githubusercontent.com/78963679/174432525-105604ac-766d-4fae-91a0-841d183ef779.png)
+
+## 9. Evaluasi
+Saya mengevaluasi dashboard ini dengan 3 dimensi yaitu *Usefulness, Usability, Aesthetics*. Sehingga dibuat pertanyaan dalam kuesioner seusai dengan dimensi evaluasi. Lalu dijawab dengan angka 1-5, dimana angka 1 berarti sangat tidak setuju dan 5 sangat setuju.
+
+*Usefulness*:
+1. Saya menganggap Dashboard ini sangat berguna
+2. Fungsi Dashboard sangat tepat untuk menampilkan kemiskinan di Indonesia
+3. Dengan bantuan Dashboard ini saya dapat menerima informasi dengan mudah
+
+*Usability*:
+1. Dashboard ini mudah digunakan
+2. Prosedur pengoperasian Dashboard mudah dipahami
+
+*Aesthetics*:
+1. Dashboard ini dirancang dengan kreatif
+2. Desain Dashboard terlihat menarik
+
+Responden yang dipilih adalah mahasiswa STIS yang dipilih secara random.
