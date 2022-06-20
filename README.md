@@ -130,16 +130,38 @@ Desainnya adalah Diagram peta paling atas karena menonjol, selanjutnya Paralel K
 Saya mengevaluasi dashboard ini dengan 3 dimensi yaitu *Usefulness, Usability, Aesthetics*. Sehingga dibuat pertanyaan dalam kuesioner seusai dengan dimensi evaluasi. Lalu dijawab dengan angka 1-5, dimana angka 1 berarti sangat tidak setuju dan 5 sangat setuju.
 
 *Usefulness*:
-1. Saya menganggap Dashboard ini sangat berguna
-2. Fungsi Dashboard sangat tepat untuk menampilkan kemiskinan di Indonesia
-3. Dengan bantuan Dashboard ini saya dapat menerima informasi dengan mudah
+1. Saya menganggap Dashboard ini sangat berguna (F1)
+2. Fungsi Dashboard sangat tepat untuk menampilkan kemiskinan di Indonesia (F2)
+3. Dengan bantuan Dashboard ini saya dapat menerima informasi dengan mudah (F3)
 
 *Usability*:
-1. Dashboard ini mudah digunakan
-2. Prosedur pengoperasian Dashboard mudah dipahami
+1. Dashboard ini mudah digunakan (U1)
+2. Prosedur pengoperasian Dashboard mudah dipahami (U2)
 
 *Aesthetics*:
-1. Dashboard ini dirancang dengan kreatif
-2. Desain Dashboard terlihat menarik
+1. Dashboard ini dirancang dengan kreatif (A1)
+2. Desain Dashboard terlihat menarik (A2)
 
-Responden yang dipilih adalah mahasiswa STIS yang dipilih secara random.
+Responden yang dipilih adalah mahasiswa STIS yang dipilih secara random. Didapat 29 mahasiswa dengan 9 perempuan dan 20 laki-laki.
+
+Barikut tabel *summary* pertanyaan evaluasi
+
+| Pertanyaan  | Rata-rata | Standar Deviasi |
+| ------------- | ------------- | ------------- |
+| F1  | 4.379310 | 0.6768516 |
+| F2  | 3.965517 | 1.0170953 |
+| F3  | 4.310345 | 0.9298021 |
+| U1  | 4.344828 | 0.7209053 |
+| U2  | 4.275862 | 0.8407714 |
+| A1  | 4.137931 | 0.7427814 |
+| A2  | 4.172414 | 0.8048498 |
+
+ Semua pertanyaan memiliki mean diatas 4 dan standar deviasi dibawah 1 selain F2. Ini berarti evaluasi di F2 tidak sebaik di pertanyaan lain.
+ 
+ | Dimensi  | Rata-rata |
+| ------------- | ------------- |
+| *Usefulness*  | 4.218391 |
+| *Usability*   | 4.310345 |
+| *Aesthetics*  | 4.155172 |
+ 
+Dapat disimpulkan bahwa sebagian besar orang setuju dengan ketiga dimensi. Artinya dashboard informasi ini berguna, bisa digunakan, dan menarik.
